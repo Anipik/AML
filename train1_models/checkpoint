@@ -1,0 +1,2 @@
+model_checkpoint_path: "driver-classifier.tfl"
+all_model_checkpoint_paths: "driver-classifier.tfl"
