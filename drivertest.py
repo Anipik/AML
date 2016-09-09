@@ -42,7 +42,7 @@ network = regression(network, optimizer='adam',
                      learning_rate=0.001)
 
 model = tflearn.DNN(network, tensorboard_verbose=0)
-model.load("train1_models/driver-classifier.tfl")
+model.load("train1_models1/driver-classifier1.tfl")
 
 # Load the image file
 #img = scipy.ndimage.imread(args.image, mode="RGB")
@@ -62,10 +62,10 @@ model.load("train1_models/driver-classifier.tfl")
 # else:
 #     print("That's not a bird!")
 i=0
-path = "test"
+path = "../DrousyDriver/test1"
 import csv
 
-with open('sample_submission1.csv', 'w') as csvfile:
+with open('sample_submission2.csv', 'w') as csvfile:
     fieldnames = ['img', 'c0' , 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
